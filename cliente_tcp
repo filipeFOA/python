@@ -7,7 +7,7 @@ try:
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((ip, port))
     msg = ""
-    while str(msg[:-1]) != "quit":
+    while str(msg) != "quit":
         msg = raw_input("Digite uma mensagem: ")
         s.send(msg)
         recebe = s.recv(1024)
