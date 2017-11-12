@@ -11,9 +11,9 @@ try:
 
     con, cliente = server.accept()
     recebe = ""
-    while str(recebe) != "quit":
+    while str(recebe[:-1]) != "quit":
         recebe = con.recv(1024)
-        if str(recebe) == "quit":
+        if str(recebe[:-1]) == "quit":
             continue
         print str(recebe)
         msg = raw_input("Digite uma mensagem: ")
