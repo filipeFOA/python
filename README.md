@@ -1,2 +1,3 @@
 # python
-scripts
+
+Simples conexão TCP entre um cliente e um servidor
